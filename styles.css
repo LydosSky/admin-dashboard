@@ -107,6 +107,7 @@ body svg {
   grid-row: 1 / 2;
   z-index: 1;
   box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.1);
+  padding: 0 2rem;
 }
 
 /* SEARCH BAR */
@@ -115,18 +116,36 @@ body svg {
 }
 
 .nav {
-  display: flex;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
   justify-content: space-between;
   align-items: center;
+  gap: 10rem;
+  padding: 1rem;
 }
 
 .nav-search input {
-  width: 35rem;
+  width: 100%;
   border-radius: 1rem;
-  padding: 0.3rem;
+  padding: 0.5rem 1rem;
   background-color: #e2e8f0;
   border: none;
+}
+
+.nav-control-container svg {
+  fill: black;
+  width: 2rem;
+}
+
+.nav .nav-user,
+.nav .nav-search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-user p {
+  font-weight: 600;
 }
 
 /* ======================================================================= */
@@ -239,4 +258,21 @@ body svg {
 
 .announcements div:nth-child(-n + 2) {
   border-bottom: 0.1rem solid #dddddd;
+}
+
+.main-container .projects .card svg {
+  fill: black;
+  width: 1.4rem;
+}
+
+.main-container .projects .card {
+  position: relative;
+}
+
+.main-container .projects .card .icons {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
 }
