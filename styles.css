@@ -51,6 +51,10 @@ body {
   grid-template-rows: 1fr 5fr;
 }
 
+body svg {
+  fill: #ffffff;
+}
+
 /* SIDEBAR =============================================================== */
 .sidebar {
   grid-column: 1 / 2;
@@ -61,8 +65,16 @@ body {
 
 .logo {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo svg {
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
 }
 
 .first-list ul li,
@@ -70,10 +82,23 @@ body {
   list-style: none;
   font-size: 1.5rem;
   margin: 0.5rem 0;
+  font-weight: 600;
 }
 
 .second-list {
   margin: 3rem 0;
+}
+
+.second-list svg,
+.first-list svg {
+  width: 1.7rem;
+}
+
+.second-list ul li,
+.first-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* ======================================================================= */
