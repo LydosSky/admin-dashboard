@@ -62,6 +62,7 @@ body {
 .logo {
   padding: 2rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .first-list ul li,
@@ -112,6 +113,7 @@ body {
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  font-weight: bold;
 }
 
 .control-bar .controls ul {
@@ -129,4 +131,87 @@ body {
 
 .main-container {
   background-color: #e2e8f0;
+}
+
+/* ======================================================================= */
+
+/* MAIN CONTAINER ======================================================== */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  padding: 1rem;
+}
+
+.main-container .card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 1.4px 2.7px 2.7px 0.1rem hsl(0deg 0% 0% / 0.1);
+}
+
+.main-container .cards-container {
+  padding: 1rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(13rem, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .projects h2 {
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-weight: Bold;
+}
+
+.cards-container .card {
+  height: 100%;
+  border-left: 0.9rem solid #f0b429;
+}
+
+.main-container .announcement-trending-container {
+  display: grid;
+  padding: 0.5rem;
+  gap: 2rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.announcements .card,
+.trending .card {
+  padding: 1rem;
+}
+
+.trending h3,
+.announcements h3,
+.cards-container .card h3 {
+  font-weight: bold;
+}
+
+.trending h3,
+.announcements h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.announcements .card,
+.trending .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.trending .card div > p:first-of-type {
+  font-weight: bold;
+}
+
+.announcements h4 {
+  font-weight: bolder;
+}
+
+.announcements div:nth-child(-n + 2) {
+  border-bottom: 0.1rem solid #dddddd;
 }
